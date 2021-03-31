@@ -42,9 +42,8 @@ video {
   display: block;
   text-align: center;
   align-items: center;
-  font-family: "ELAND_Choice_L";
-  font-size: 2.3em;
-  font-weight: bold;
+  font-family: "BMHANNAPro";
+  font-size: 3em;
   border: none;
   color: white;
   padding-top: 20px;
@@ -78,7 +77,7 @@ video {
 
 .empty_space {
   background-color: #eff2f9;
-  height: 100px; /* 임시로 정한 크기 ㅋㅋ */
+  height: 10px; /* 임시로 정한 크기 ㅋㅋ */
 }
 
 .main-field {
@@ -141,20 +140,77 @@ video {
   padding-bottom: 0.3em;
 }
 
+.main-body {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3em;
+  line-height: 150%;
+}
+
+.info-section {
+  margin-bottom: 3.5em;
+}
+
+#my-history {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 150%;
+}
+
+#gallery-explanation {
+  position: absolute;
+  left: 1em;
+  top: -2em;
+  border-bottom: 3px solid black;
+}
+
+#pictures {
+  margin: 1em auto;
+}
+
+.picture {
+  width: 80%;
+  border: 2px solid black;
+}
+
+/*
+- Media Query
+*/
+
+/* PC or 모바일가로 */
 @media (min-width: 481px) and (max-width: 2000px) {
-  * {
-    font-family: "ELAND_Nice_M";
+  #page_title {
+    background-color: #2db400;
+  }
+  footer {
+    background-color: #2db400;
+  }
+  .youtube {
+    width: 480px;
+    height: 360px;
+  }
+  .picture {
+    width: 450px;
   }
 }
 
+/* 모바일 */
 @media (min-width: 320px) and (max-width: 480px) {
-  * {
-    font-family: "ELAND_Choice_M";
+  #page_title {
+    background-color: #2ac1bc;
+  }
+  .youtube {
+    width: 90%;
+    height: 12em;
   }
 }
 
 /*
-Fonts
+- Fonts
 */
 @font-face {
   font-family: "ELAND_Choice_M";
@@ -175,6 +231,14 @@ Fonts
 @font-face {
   font-family: "ELAND_Nice_M";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
