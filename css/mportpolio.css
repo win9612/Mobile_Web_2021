@@ -1,5 +1,8 @@
 /*
 공통 스타일시트
+설정 미디어: Galaxy S5
+
+I have to use : Position(relative, absolute)
 */
 * {
   font-family: "ELAND_Choice_M";
@@ -12,6 +15,26 @@ a {
 
 header {
   display: block;
+}
+
+footer {
+  display: block;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #2ac1bc;
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: 1px solid #d3d3d3;
+}
+
+video {
+  max-width: 80%;
+  display: block;
+  margin: 20px auto;
 }
 
 #page_title {
@@ -40,7 +63,6 @@ header {
 .menu_button {
   display: block;
   display: inline-block;
-  float: center;
   width: 3.5em;
   height: 1.5em;
   margin: 0 auto;
@@ -57,6 +79,78 @@ header {
 .empty_space {
   background-color: #eff2f9;
   height: 100px; /* 임시로 정한 크기 ㅋㅋ */
+}
+
+.main-field {
+  padding-top: 1em;
+}
+
+#intro-namebox {
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#intro-namebox-name {
+  display: block;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 5px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: blue;
+}
+
+#intro-namebox-job {
+  display: block;
+  padding-left: 1.45em;
+  padding-right: 1em;
+  padding-bottom: 5px;
+  font-size: 0.9em;
+}
+
+#intro-infobox {
+  font-size: 0.9em;
+  margin-top: 1em;
+  height: 11em;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#intro-infobox-info {
+  margin-left: 1em;
+  float: left;
+  width: 14em;
+  box-sizing: border-box;
+}
+
+#intro-infobox-idphoto {
+  margin-right: 1em;
+  float: right;
+  width: 7em;
+  height: 9em;
+  box-sizing: border-box;
+}
+
+.intro-infobox-info-cat {
+  color: gray;
+  padding-bottom: 0.3em;
+}
+
+.intro-infobox-info-content {
+  color: black;
+  padding-bottom: 0.3em;
+}
+
+@media (min-width: 481px) and (max-width: 2000px) {
+  * {
+    font-family: "ELAND_Nice_M";
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  * {
+    font-family: "ELAND_Choice_M";
+  }
 }
 
 /*
