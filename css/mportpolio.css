@@ -1,8 +1,6 @@
 /*
 공통 스타일시트
-설정 미디어: Galaxy S5
-
-I have to use : Position(relative, absolute)
+설정 미디어 기준: Galaxy S5
 */
 * {
   font-family: "ELAND_Choice_M";
@@ -182,7 +180,7 @@ video {
 */
 
 /* PC or 모바일가로 */
-@media (min-width: 481px) and (max-width: 2000px) {
+@media (min-width: 481px) {
   #page_title {
     background-color: #2db400;
   }
